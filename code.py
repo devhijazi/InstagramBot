@@ -59,7 +59,7 @@ class InstagramBot:
       driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
 
       try:
-        coments_list = ["Toop!","Esse carro é foda demais","Lindo!","Bora @hijazi_gabriel","Braboo"]
+        coments_list = ["Toop!"]
         driver.find_element_by_class_name('Ypffh').click()
         textarea_input = driver.find_element_by_class_name('Ypffh')
         time.sleep(random.randint(2,8))
@@ -72,5 +72,5 @@ class InstagramBot:
         time.sleep(5)
 
 
-hjzBot = InstagramBot('arabesstg1','teste@123')
+hjzBot = InstagramBot('','')
 hjzBot.login()
